@@ -47,41 +47,30 @@
   </div>
 </div>
 
+
+
+
+
+
 <div class="container-full padding-top-15px" id="main">
   <div class="container">
     <div class="row">
 
       <div class="col-xs-12 col-md-8">
         <h4 class="section-heading">What's Now?</h4>
-
-        <div class="article">
-          <h3 class="title">ABCs for Divine Spirit Communication</h3>
-          <div class="date">Febuary 28, 2015</div>
-          <div class="content">
-            <img src="./article-image.jpg">
-            <div class="caption">
-              &mdash; image of a crystal
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <div class="article">
+            <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+            <div class="date"><?php the_time('F jS, Y'); ?></div>
+            <div class="content">
+              <?php the_content(); ?>
             </div>
-            <p>As a result of the nature of my work as a medium, I am often asked how others might enjoy a spiritual dialog with loved ones who have passed away. My first response is always the same: I tell them to meditate regularly. It is the single most important element to communication whether that dialog is on this side or the other side. The more one adopts the routine of mindfulness through breathing, the clearer the level of communication will be. You are allowing yourself to be free to think in a space within you that is of access only to you.</p>
-
-            <p>As simple as your ABC’s, these tips will help you establish a healthy connection for communication.</p>
-
-            <p><strong>TIP A</strong></p>
-
-            <p>Align with the Angels and meditate on communicating love. Any time we align ourselves with divine guidance we are aligning ourselves with true healing energy and therefore able to deliver and receive messages.</p>
-
-            <p><strong>TIP B</strong></p>
-
-            <p>Bless Your Words and express your thoughts through positive language. The words we speak can make or break our communication with spirit and it’s important to refrain from negativity so that your intention is clear.</p>
-
-            <p><strong>TIP C</strong></p>
-
-            <p>Create a Sacred Space to honor the divine dialog you wish to experience. Be sure to include any special object that belonged to the deceased, like a card, ornament or gift. The sense memory attached to it will expedite communication.
-            Make a habit of visiting your sacred space once a day for at least twenty minutes and you will bond with it. Your energy will begin to experience what real breathing is, and it will help you to slow down so that divine communication becomes easily possible.
-            We all have the ability to speak with spirit. If you are a person who prays, then you are already doing it. If not, then with time, practice, and faith you will be part of a very special club, one that uses a divine computer to communicate with.</p>
           </div>
-        </div>
-
+        <?php endwhile; else : ?>
+          <div class="article">
+            <h3><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h3>
+          </div>
+        <?php endif; ?>
       </div>
 
       <div class="col-xs-12 col-md-4">
