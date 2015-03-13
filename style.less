@@ -1,0 +1,231 @@
+/*
+Theme Name:Savory
+Author:Thomas Reggi
+Version:0.1 (Beta)
+License:Private Copyright
+*/
+
+// TYPE FONTS TYPEOGRAPHY
+
+.sans-serif{
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.serif{
+  font-family:'Lora', serif;
+  text-rendering:optimizeLegibility;
+}
+
+.font-paragraph{
+  .sans-serif;
+  line-height:2;
+}
+
+.font-title{
+  .sans-serif;
+  font-weight:bold;
+}
+
+.color-black{
+  color:#333;
+}
+
+@color-black:#333;
+@color-white:#f4f4f4;
+
+
+// WORDPRESS OVERRIDES
+
+div.wp-caption {
+  width:100% !important;
+}
+
+// GENERAL STYLES
+
+body{
+  .serif;
+  color:@color-black;
+  font-size:16px !important;
+}
+
+// REUESD COMPONENTS
+
+.container-full{
+  width:100%;
+}
+
+.bind-image{
+  width:100%
+}
+
+.stretch-image{
+  background-repeat:no-repeat;
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+.white-rule{
+  margin:15px 0;
+}
+
+.padding-top-30px{
+  padding-top:30px;
+}
+
+.padding-bottom-30px{
+  padding-bottom:30px;
+}
+
+.padding{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+h4.section-heading{
+  text-transform:uppercase;
+  border-bottom:1px solid #ccc;
+  padding-bottom:15px;
+  margin-bottom:30px;
+  line-height:2;
+}
+
+// FORM STYLES
+
+
+.flat-input{
+  border:none;
+  box-shadow:none;
+  border-bottom:2px solid #333;
+  border-radius:0px;
+  .placeholder{
+    color:#333;font-style:italic;letter-spacing:1px
+  }
+  &::-webkit-input-placeholder {.placeholder;}
+  &::-ms-input-placeholder {.placeholder;}
+  &::-moz-placeholder {.placeholder;}
+  &:focus{
+    border-bottom:1px solid #333;
+    outline:invert none medium !important;
+    box-shadow:none !important;
+  }
+}
+
+label{
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+// BUTTONS
+
+.btn-custom{
+  .serif;
+  background-color:black;
+  color:#f4f4f4 !important;
+  text-align:center;
+  border-radius:0;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  padding:10px 20px;
+  color:#fff
+}
+
+.btn-full{
+  width:100%;
+  display:block;
+}
+
+.btn-share{
+  width:100%;
+  border-bottom:2px solid #333;
+  font-size:17px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  padding-bottom:15px;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+// MAIN IMAGE
+
+#main-image{
+  .stretch-image;
+  height:650px
+}
+
+// HEADER
+
+#header{
+  .serif;
+  color:@color-white;
+  text-transform:uppercase;
+  font-size:12px;
+  line-height:12px;
+  letter-spacing:4px;
+  a{
+    color:@color-white !important;
+  }
+  ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  li{
+    display:inline-block;
+    margin-right:45px;
+  }
+  .logo{
+    text-transform:uppercase;
+    font-size:16px;
+    letter-spacing:5px;
+  }
+
+}
+
+.article{
+  h3{
+    .font-title;
+  }
+  p{
+    .font-paragraph;
+  }
+  img{
+    width:100%;
+    display:block;
+    padding-bottom:15px;
+  }
+  .caption,
+  .date{
+    font-style:italic;
+    padding-bottom:10px
+  }
+  .title a{
+    color:#333 !important;
+  }
+}
+
+.workshop{
+  h3{
+    padding-bottom:15px;
+  }
+  .padding-bottom-30px;
+  .article;
+  .stretch-image{
+    height:175px;
+  }
+}
+
+.sidebar{
+  .article{
+    .padding-bottom-30px;
+    .article;
+  }
+}
+
+#footer{
+  .padding;
+  background-color:#000;
+  color:@color-white;
+}

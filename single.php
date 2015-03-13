@@ -5,18 +5,20 @@
     <div class="row">
       <div class="col-xs-12 col-md-8">
         <h4 class="section-heading">What's Now?</h4>
-        <?php if ( $main_query->have_posts() ) : while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <?php $main_post_id = get_the_ID(); ?>
           <?php include "article-general.php"; ?>
-          <?php posts_nav_link(); ?>
-          <div class="padding">
-            <a href="#" class="btn btn-custom btn-full ">Next article &rarr; </a>
-          </div>
         <?php endwhile; else : ?>
           <div class="article">
             <h3><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h3>
           </div>
         <?php endif; ?>
+        "<?php echo get_adjacent_post()->guid; ?>"<br>
+        "<?php echo get_adjacent_post(true)->guid; ?>"<br>
+        "<?php echo get_adjacent_post(true, "", true)->guid; ?>"<br>
+        <div class="padding">
+          <a href="#" class="btn btn-custom btn-full ">Next article &rarr; </a>
+        </div>
       </div>
       <div class="col-xs-12 col-md-4">
         <?php include "sidebar.php"; ?>
