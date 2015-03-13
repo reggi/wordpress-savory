@@ -162,6 +162,9 @@ label {
   font-size: 16px;
   letter-spacing: 5px;
 }
+#search i {
+  color: #333;
+}
 .article h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
