@@ -110,7 +110,10 @@ label {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #fff;
+}
+.btn-custom:hover {
+  background-color: #181818;
 }
 .btn-full {
   width: 100%;
