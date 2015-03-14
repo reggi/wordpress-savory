@@ -33,6 +33,8 @@ body {
 }
 .container-full {
   width: 100%;
+  background: #fff;
+  position: relative;
 }
 .bind-image {
   width: 100%;
@@ -129,7 +131,7 @@ label {
   margin-bottom: 15px;
   text-align: center;
 }
-#main-image {
+.main-image {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -137,6 +139,20 @@ label {
   -o-background-size: cover;
   background-size: cover;
   height: 650px;
+  position: fixed;
+  width: 100%;
+}
+.main-header-text {
+  height: 650px;
+}
+.main-image-single {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 40px;
 }
 #header {
   font-family: 'Lora', serif;

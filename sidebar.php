@@ -18,8 +18,14 @@
 <h4 class="section-heading">Latest Posts</h4>
 
 <div class="sidebar">
-  <?php $my_query = sidebar_query($main_post_id); ?>
-  <?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
+  <?php
+  $sidebar_query = array (
+      "post_type" => "post",
+      "post__not_in" => array($main_post_id),
+      "category__not_in" => $block_cat_ids
+  );
+  $custom_query = new WP_Query($sidebar_query);
+  if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
   <div class="row">
     <div class="col-xs-12">
       <div class="article">
@@ -36,6 +42,7 @@
   </div>
   <?php endwhile; ?>
   <?php endif; ?>
+  <?php wp_reset_query(); ?>
 </div>
 
 <h4 class="section-heading">Upcoming Events &mdash; Classes, Workshops &amp; More</h4>
@@ -43,7 +50,9 @@
 <div class="sidebar-rows">
   <div class="row">
     <div class="col-xs-12">
-      <?php if ($event_query->have_posts()) : while ($event_query->have_posts()) : $event_query->the_post(); ?>
+      <?php
+      $custom_query = new WP_Query($event_query);
+      if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
       <div class="event small">
         <h4 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
         <div class="address"><?php echo get_post_meta($post->ID, 'address', true); ?></div>
@@ -52,6 +61,7 @@
       </div>
       <?php endwhile; ?>
       <?php endif; ?>
+      <?php wp_reset_query(); ?>
     </div>
   </div>
 </div>
