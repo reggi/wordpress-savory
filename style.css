@@ -46,7 +46,7 @@ body {
   background-size: cover;
 }
 .white-rule {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .padding-top-30px {
   padding-top: 30px;
@@ -144,7 +144,7 @@ label {
   color: #f4f4f4;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 25px;
   letter-spacing: 4px;
 }
 #header a {
@@ -163,6 +163,7 @@ label {
 #header .logo {
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 27px;
   letter-spacing: 5px;
 }
 #search i {

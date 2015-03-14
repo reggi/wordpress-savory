@@ -25,7 +25,10 @@
   <div id="main-image" style="background-image:url(<?php echo get_template_directory_uri(); ?>/homepage.jpg)">
   <div class="container padding-top-30px">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-2 col-md-1">
+        <img class="bind-image" src="<?php echo get_template_directory_uri(); ?>/images/lotus-white.png">
+      </div>
+      <div class="col-xs-10 col-md-11">
         <span class="logo">
           Edible Spirits
         </span>
