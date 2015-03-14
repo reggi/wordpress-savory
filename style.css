@@ -169,9 +169,12 @@ label {
 #search i {
   color: #333;
 }
-.article h3 {
+.article .title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
+}
+.article .title a {
+  color: #333 !important;
 }
 .article p {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -187,18 +190,18 @@ label {
   font-style: italic;
   padding-bottom: 10px;
 }
-.article .title a {
-  color: #333 !important;
-}
 .workshop {
   padding-bottom: 30px;
 }
 .workshop h3 {
   padding-bottom: 15px;
 }
-.workshop h3 {
+.workshop .title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
+}
+.workshop .title a {
+  color: #333 !important;
 }
 .workshop p {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -214,35 +217,24 @@ label {
   font-style: italic;
   padding-bottom: 10px;
 }
-.workshop .title a {
-  color: #333 !important;
-}
 .workshop .stretch-image {
   height: 175px;
 }
 .sidebar .article {
   padding-bottom: 30px;
 }
-.sidebar .article h3 {
+.event .title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
-.sidebar .article p {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 2;
-}
-.sidebar .article img {
-  width: 100%;
-  display: block;
-  padding-bottom: 15px;
-}
-.sidebar .article .caption,
-.sidebar .article .date {
-  font-style: italic;
-  padding-bottom: 10px;
-}
-.sidebar .article .title a {
+.event .title a {
   color: #333 !important;
+}
+.event .address {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 0 0 15px 0;
 }
 #footer {
   padding-top: 30px;

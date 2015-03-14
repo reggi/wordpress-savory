@@ -18,7 +18,7 @@
           </div>
         <?php endif; ?>
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4 sidebar">
         <?php include "sidebar.php"; ?>
       </div>
     </div>

@@ -193,8 +193,11 @@ label{
 }
 
 .article{
-  h3{
+  .title{
     .font-title;
+    a{
+      color:#333 !important;
+    }
   }
   p{
     .font-paragraph;
@@ -208,9 +211,6 @@ label{
   .date{
     font-style:italic;
     padding-bottom:10px
-  }
-  .title a{
-    color:#333 !important;
   }
 }
 
@@ -228,7 +228,21 @@ label{
 .sidebar{
   .article{
     .padding-bottom-30px;
-    .article;
+  }
+}
+
+.event{
+  .title{
+    .font-title;
+  }
+  .title a{
+    color:#333 !important;
+  }
+  .address{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 0 0 15px 0;
   }
 }
 

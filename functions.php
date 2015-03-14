@@ -47,4 +47,10 @@ function sidebar_query($main_post_id){
   ));
 }
 
+$event_query = new WP_Query(array (
+    "post_type" => "post",
+    "posts_per_page" => 1,
+    "category__in" => $block_cat_ids
+));
+
 ?>

@@ -36,7 +36,6 @@
   </div>
   <?php endwhile; ?>
   <?php endif; ?>
-  <?php wp_reset_query(); ?>
 </div>
 
 <h4 class="section-heading">Upcoming Events &mdash; Classes, Workshops &amp; More</h4>
@@ -44,17 +43,15 @@
 <div class="sidebar-rows">
   <div class="row">
     <div class="col-xs-12">
+      <?php if ($event_query->have_posts()) : while ($event_query->have_posts()) : $event_query->the_post(); ?>
       <div class="event small">
-        <h4 class="title">Channeling</h4>
-        <div class="address">
-          March 10, 2015 8:00pm<br>
-          The Wooly<br>
-          11 Barclay Street<br>
-          New York, NY<br>
-        </div>
-        <div class="btn-share">Share event</div>
-        <a href="#" class="btn btn-custom btn-full">RSVP</a>
+        <h4 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+        <div class="address"><?php echo get_post_meta($post->ID, 'address', true); ?></div>
+        <div class="addthis_native_toolbox"></div>
+        <a href="<?php echo get_post_meta($post->ID, 'event_url', true); ?>" class="btn btn-custom btn-full">RSVP</a>
       </div>
+      <?php endwhile; ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5504b0480506ea27" async="async"></script>
 </head>
 <body>
 
