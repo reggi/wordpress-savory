@@ -17,7 +17,6 @@
             <h3><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h3>
           </div>
         <?php endif; ?>
-        <?php include "article-next-prev.php"; ?>
       </div>
       <div class="col-xs-12 col-md-4">
         <?php include "sidebar.php"; ?>
