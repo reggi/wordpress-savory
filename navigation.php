@@ -10,7 +10,7 @@
       <div class="col-xs-10 col-md-11">
         <span class="logo">
           <a href="/">
-            Edible Spirits
+            Edible Spirit
           </a>
         </span>
         <hr class="white-rule">
