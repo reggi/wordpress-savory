@@ -101,19 +101,19 @@
       <div class="col-xs-12 col-sm-4">
         <h4 class="section-heading">Have an idea?</h4>
         <form class="subscription">
-          <div class="form-group padding-bottom-30px">
+          <div class="form-group">
             <label class="flat-label" for="your-name">Your Name</label>
             <input type="text" class="form-control flat-input" id="your-name" placeholder="name">
           </div>
-          <div class="form-group padding-bottom-30px">
+          <div class="form-group">
             <label class="flat-label" for="your-name">Your Email</label>
             <input type="email" class="form-control flat-input" id="your-name" placeholder="email@email.com">
           </div>
-          <div class="form-group padding-bottom-30px">
+          <div class="form-group">
             <label class="flat-label" for="your-name">Brief Comments</label>
             <textarea class="form-control flat-input" id="your-name" placeholder="Do you have an even idea in mind? Describe it here..."></textarea>
           </div>
-          <div class="form-group padding-bottom-30px">
+          <div class="form-group">
             <button type="submit" class="btn btn-custom btn-full">Submit</button>
           </div>
         </form>

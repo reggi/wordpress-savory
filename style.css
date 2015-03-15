@@ -58,6 +58,12 @@ body {
 .padding-bottom-30px {
   padding-bottom: 30px;
 }
+.padding-top-15px {
+  padding-top: 15px;
+}
+.padding-bottom-15px {
+  padding-bottom: 15px;
+}
 .padding {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -69,49 +75,53 @@ h4.section-heading {
   margin-bottom: 30px;
   line-height: 2;
 }
-.flat-input {
+.form-group {
+  margin-bottom: 30px;
+}
+.form-control {
   border: none;
   box-shadow: none;
   border-bottom: 2px solid #333;
   border-radius: 0px;
 }
-.flat-input .placeholder {
+.form-control .placeholder {
   color: #333;
   font-style: italic;
   letter-spacing: 1px;
 }
-.flat-input::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
   color: #333;
   font-style: italic;
   letter-spacing: 1px;
 }
-.flat-input::-ms-input-placeholder {
+.form-control::-ms-input-placeholder {
   color: #333;
   font-style: italic;
   letter-spacing: 1px;
 }
-.flat-input::-moz-placeholder {
+.form-control::-moz-placeholder {
   color: #333;
   font-style: italic;
   letter-spacing: 1px;
 }
-.flat-input:focus {
+.form-control:focus {
   border-bottom: 1px solid #333;
   outline: invert none medium !important;
   box-shadow: none !important;
 }
-textarea.flat-input {
+textarea.form-control {
   border: 2px solid #333;
   max-width: 100%;
   height: 100px;
   padding: 15px;
 }
-textarea.flat-input:focus {
+textarea.form-control:focus {
   border: 1px solid #333;
 }
 label {
   font-weight: bold;
   text-transform: uppercase;
+  display: block;
 }
 .btn-custom {
   font-family: 'Cardo', serif;
