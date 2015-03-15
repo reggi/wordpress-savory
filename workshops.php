@@ -7,11 +7,16 @@
     </div>
     <div class="row" id="workshops">
       <div class="col-xs-12">
-        <?php query_posts('category_name=psychic-development'); ?>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php
+        $custom_query = new WP_Query(array (
+            "post_type" => "event",
+            "category__in" => get_cat_id("Psychic Deveolpment"),
+        ));
+        if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
           <?php include "article-workshop.php"; ?>
         <?php endwhile; else : ?>
         <?php endif; ?>
+        <?php wp_reset_query(); ?>
       </div>
     </div>
     <div class="row">
@@ -21,11 +26,16 @@
     </div>
     <div class="row" id="workshops">
       <div class="col-xs-12">
-        <?php query_posts('category_name=journeys'); ?>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php
+        $custom_query = new WP_Query(array (
+            "post_type" => "event",
+            "category__in" => get_cat_id("Journeys"),
+        ));
+        if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
           <?php include "article-workshop.php"; ?>
         <?php endwhile; else : ?>
         <?php endif; ?>
+        <?php wp_reset_query(); ?>
       </div>
     </div>
   </div>

@@ -5,18 +5,19 @@ Version:0.1 (Beta)
 License:Private Copyright
 */
 .sans-serif {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 .serif {
-  font-family: 'Lora', serif;
+  font-family: 'Cardo', serif;
   text-rendering: optimizeLegibility;
+  letter-spacing: .01em;
 }
 .font-paragraph {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   line-height: 2;
 }
 .font-title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .color-black {
@@ -26,8 +27,9 @@ div.wp-caption {
   width: 100% !important;
 }
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Cardo', serif;
   text-rendering: optimizeLegibility;
+  letter-spacing: .01em;
   color: #333333;
   font-size: 16px !important;
 }
@@ -103,8 +105,9 @@ label {
   text-transform: uppercase;
 }
 .btn-custom {
-  font-family: 'Lora', serif;
+  font-family: 'Cardo', serif;
   text-rendering: optimizeLegibility;
+  letter-spacing: .01em;
   background-color: black;
   color: #f4f4f4 !important;
   text-align: center;
@@ -155,8 +158,9 @@ label {
   padding-bottom: 40px;
 }
 #header {
-  font-family: 'Lora', serif;
+  font-family: 'Cardo', serif;
   text-rendering: optimizeLegibility;
+  letter-spacing: .01em;
   color: #f4f4f4;
   text-transform: uppercase;
   font-size: 12px;
@@ -186,14 +190,14 @@ label {
   color: #333;
 }
 .article .title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .article .title a {
   color: #333 !important;
 }
 .article p {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   line-height: 2;
 }
 .article img {
@@ -213,14 +217,14 @@ label {
   padding-bottom: 15px;
 }
 .workshop .title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .workshop .title a {
   color: #333 !important;
 }
 .workshop p {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   line-height: 2;
 }
 .workshop img {
@@ -240,7 +244,7 @@ label {
   padding-bottom: 30px;
 }
 .event .title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .event .title a {
@@ -251,6 +255,7 @@ label {
   word-wrap: break-word;
   white-space: pre-wrap;
   padding: 0 0 15px 0;
+  font-size: 17px;
 }
 #footer {
   padding-top: 30px;

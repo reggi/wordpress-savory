@@ -19,12 +19,11 @@
 
 <div class="sidebar">
   <?php
-  $sidebar_query = array (
+  $custom_query = new WP_Query(array (
       "post_type" => "post",
-      "post__not_in" => array($main_post_id),
-      "category__not_in" => $block_cat_ids
-  );
-  $custom_query = new WP_Query($sidebar_query);
+      "posts_per_page" => 3,
+      "post__not_in" => array($main_post_id)
+  ));
   if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
   <div class="row">
     <div class="col-xs-12">
@@ -51,7 +50,13 @@
   <div class="row">
     <div class="col-xs-12">
       <?php
-      $custom_query = new WP_Query($event_query);
+      $custom_query = new WP_Query(array (
+          "post_type" => "event",
+          "posts_per_page" => 1,
+          "category__in" => get_cat_id("Sidebar Event"),
+          "orderby" => "date",
+          "order" => 'DESC',
+      ));
       if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
       <div class="event small">
         <h4 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>

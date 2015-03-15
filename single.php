@@ -54,6 +54,9 @@
         "<?php echo get_adjacent_post()->guid; ?>"<br>
         "<?php echo get_adjacent_post(true)->guid; ?>"<br>
         "<?php echo get_adjacent_post(true, "", true)->guid; ?>"<br>
+
+        <a id="trigger-next"href="<?php print(get_adjacent_post()->guid); ?>"><i class="icon-chevron-sign-right"></i> Next : </a> <?php print(get_adjacent_post()->post_title); ?>
+
         <div class="padding">
           <a href="#" class="btn btn-custom btn-full ">Next article &rarr; </a>
         </div>

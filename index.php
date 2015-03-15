@@ -45,7 +45,10 @@
       <div class="col-xs-12 col-md-8">
         <h4 class="section-heading">What's Now?</h4>
         <?php
-        $custom_query = new WP_Query($main_query);
+        $custom_query = new WP_Query(array (
+            "post_type" => "post",
+            "posts_per_page" => 1
+        ));
         if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
           <?php $main_post_id = get_the_ID(); ?>
           <?php include "article-general.php"; ?>
