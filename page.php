@@ -8,7 +8,6 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-8">
-        <h4 class="section-heading">What's Now?</h4>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <?php $main_post_id = get_the_ID(); ?>
           <?php include "article-general.php"; ?>

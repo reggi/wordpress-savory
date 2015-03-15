@@ -12,7 +12,7 @@
           "category__in" => get_cat_id("Private Sessions"),
       ));
       if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
-        <?php include "article-session.php"; ?>
+        <?php include "article-private-session.php"; ?>
       <?php endwhile; else : ?>
       <?php endif; ?>
       <?php wp_reset_query(); ?>
