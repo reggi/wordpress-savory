@@ -10,7 +10,12 @@
       <div class="col-xs-12 col-md-8">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <?php $main_post_id = get_the_ID(); ?>
-          <?php include "article-general.php"; ?>
+          <div class="article">
+            <h3 class="title padding-bottom-15px"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+            <div class="content">
+              <?php the_content(); ?>
+            </div>
+          </div>
         <?php endwhile; else : ?>
           <div class="article">
             <h3><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h3>
