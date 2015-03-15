@@ -21,7 +21,7 @@
   <?php
   $custom_query = new WP_Query(array (
       "post_type" => "post",
-      "posts_per_page" => 3,
+      "posts_per_page" => 1,
       "post__not_in" => array($main_post_id)
   ));
   if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>

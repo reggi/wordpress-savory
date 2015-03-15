@@ -53,15 +53,13 @@
           <?php $main_post_id = get_the_ID(); ?>
           <?php include "article-general.php"; ?>
           <?php posts_nav_link(); ?>
-          <div class="padding">
-            <a href="#" class="btn btn-custom btn-full ">Next article &rarr; </a>
-          </div>
         <?php endwhile; else : ?>
           <div class="article">
             <h3><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h3>
           </div>
         <?php endif; ?>
         <?php wp_reset_query(); ?>
+        <?php include "article-next-prev.php"; ?>
       </div>
       <div class="col-xs-12 col-md-4 sidebar">
         <?php include "sidebar.php"; ?>

@@ -124,6 +124,10 @@ label {
   width: 100%;
   display: block;
 }
+.btn-half {
+  width: 50%;
+  display: inline-block;
+}
 .btn-share {
   width: 100%;
   border-bottom: 2px solid #333;
