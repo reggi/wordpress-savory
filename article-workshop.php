@@ -5,7 +5,7 @@
         <h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
       </div>
     </div>
-    <div class="row">
+    <div class="row onClickShowContent">
       <div class="col-xs-12 col-sm-6">
         <?php
           $post_thumbnail_id = get_post_thumbnail_id();

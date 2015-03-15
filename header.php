@@ -24,6 +24,11 @@
       $('.masonry').masonry({
         itemSelector: '.col-session'
       })
+      $(".onClickShowContent .content").addClass("hidden")
+
+      $(".onClickShowContent .title, .onClickShowContent .stretch-image").on("click", function(){
+        $(this).find(".content").removeClass("hidden")
+      }).css({"cursor": "pointer"})
     })
   </script>
 </head>
