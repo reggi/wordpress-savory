@@ -22,7 +22,7 @@
         <h4 class="section-heading">Psychic Development Workshops</h4>
       </div>
     </div>
-    <div class="row" id="workshops">
+    <div class="row">
       <div class="col-xs-12">
         <?php
         $custom_query = new WP_Query(array (
@@ -42,7 +42,7 @@
         <h4 class="section-heading">Workshops</h4>
       </div>
     </div>
-    <div class="row" id="workshops">
+    <div class="row">
       <div class="col-xs-12">
         <?php
         $custom_query = new WP_Query(array (
@@ -62,7 +62,7 @@
         <h4 class="section-heading">Journey Workshops</h4>
       </div>
     </div>
-    <div class="row" id="workshops">
+    <div class="row">
       <div class="col-xs-12">
         <?php
         $custom_query = new WP_Query(array (
