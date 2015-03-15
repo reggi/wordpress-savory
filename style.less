@@ -28,10 +28,10 @@ License:Private Copyright
 }
 
 .color-black{
-  color:#333;
+  color:#000000;
 }
 
-@color-black:#333;
+@color-black:#000000;
 @color-white:#f4f4f4;
 
 
@@ -39,14 +39,16 @@ License:Private Copyright
 
 div.wp-caption {
   width:100% !important;
+  color:#000000;
 }
 
 // GENERAL STYLES
 
 body{
   .serif;
-  color:@color-black;
+  color:#515151;
   font-size:16px !important;
+
 }
 
 // REUESD COMPONENTS
@@ -105,6 +107,7 @@ h4.section-heading{
   padding-bottom:15px;
   margin-bottom:30px;
   line-height:2;
+  color:#000000;
 }
 
 // BUTTONS
@@ -136,7 +139,7 @@ h4.section-heading{
 
 .btn-share{
   width:100%;
-  border-bottom:2px solid #333;
+  border-bottom:2px solid #000000;
   font-size:17px;
   text-transform:uppercase;
   letter-spacing:3px;
@@ -193,11 +196,11 @@ h4.section-heading{
 }
 
 #search i{
-  color: #333;
+  color: #000000;
 }
 
 .article.session{
-  border-top:2px solid #333;
+  border-top:2px solid #000000;
   padding-top: 15px;
   margin-bottom: 30px;
 }
@@ -206,7 +209,7 @@ h4.section-heading{
   .title{
     .font-title;
     a{
-      color:#333 !important;
+      color:#000000 !important;
     }
   }
   p{
@@ -219,6 +222,7 @@ h4.section-heading{
   }
   .caption,
   .date{
+    color:#000;
     font-style:italic;
     padding-bottom:10px
   }
@@ -249,7 +253,7 @@ h4.section-heading{
     .font-title;
   }
   .title a{
-    color:#333 !important;
+    color:#000000 !important;
   }
   .address{
     word-break: break-all;
@@ -267,9 +271,8 @@ h4.section-heading{
 }
 
 .placeholder{
-  color:#333;font-style:italic;letter-spacing:1px
+  color:#515151;font-style:italic;letter-spacing:1px
 }
-
 
 .form-group{
   margin-bottom: 30px;
@@ -278,28 +281,25 @@ h4.section-heading{
 .form-control{
   border:none;
   box-shadow:none;
-  border-bottom:2px solid #333;
+  border-bottom:2px solid #000000;
   border-radius:0px;
-  .placeholder{
-    color:#333;font-style:italic;letter-spacing:1px
-  }
   &::-webkit-input-placeholder {.placeholder;}
   &::-ms-input-placeholder {.placeholder;}
   &::-moz-placeholder {.placeholder;}
   &:focus{
-    border-bottom:1px solid #333;
+    border-bottom:1px solid #000000;
     outline:invert none medium !important;
     box-shadow:none !important;
   }
 }
 
 textarea.form-control{
-  border:2px solid #333;
+  border:2px solid #000000;
   max-width: 100%;
   height: 100px;
   padding: 15px;
   &:focus{
-    border:1px solid #333;
+    border:1px solid #000000;
   }
 }
 
@@ -374,36 +374,30 @@ label{
   width: 100%;
   border:none;
   box-shadow:none;
-  border-bottom:2px solid #333;
+  border-bottom:2px solid #000000;
   border-radius:0px;
-  .placeholder{
-    color:#333;font-style:italic;letter-spacing:1px
-  }
   &::-webkit-input-placeholder {.placeholder;}
   &::-ms-input-placeholder {.placeholder;}
   &::-moz-placeholder {.placeholder;}
   &:focus{
-    border-bottom:1px solid #333;
+    border-bottom:1px solid #000000;
     outline:invert none medium !important;
     box-shadow:none !important;
   }
 }
 .fscf-input-captcha      {}
 .fscf-input-textarea     {
-  border:2px solid #333;
+  border:2px solid #000000;
   max-width: 100%;
   min-width: 100%;
   height: 100px;
   padding: 15px;
-  .placeholder{
-    color:#333;font-style:italic;letter-spacing:1px
-  }
   &::-webkit-input-placeholder {.placeholder;}
   &::-ms-input-placeholder {.placeholder;}
   &::-moz-placeholder {.placeholder;}
   &:focus{
     outline:none;
-    border:1px solid #333;
+    border:1px solid #000000;
   }
 }
 .fscf-input-select       {}

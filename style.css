@@ -21,16 +21,17 @@ License:Private Copyright
   font-weight: bold;
 }
 .color-black {
-  color: #333;
+  color: #000000;
 }
 div.wp-caption {
   width: 100% !important;
+  color: #000000;
 }
 body {
   font-family: 'Cardo', serif;
   text-rendering: optimizeLegibility;
   letter-spacing: .01em;
-  color: #333333;
+  color: #515151;
   font-size: 16px !important;
 }
 .container-full {
@@ -77,6 +78,7 @@ h4.section-heading {
   padding-bottom: 15px;
   margin-bottom: 30px;
   line-height: 2;
+  color: #000000;
 }
 .btn-custom {
   font-family: 'Cardo', serif;
@@ -104,7 +106,7 @@ h4.section-heading {
 }
 .btn-share {
   width: 100%;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #000000;
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -164,10 +166,10 @@ h4.section-heading {
   letter-spacing: 5px;
 }
 #search i {
-  color: #333;
+  color: #000000;
 }
 .article.session {
-  border-top: 2px solid #333;
+  border-top: 2px solid #000000;
   padding-top: 15px;
   margin-bottom: 30px;
 }
@@ -176,7 +178,7 @@ h4.section-heading {
   font-weight: bold;
 }
 .article .title a {
-  color: #333 !important;
+  color: #000000 !important;
 }
 .article p {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -189,6 +191,7 @@ h4.section-heading {
 }
 .article .caption,
 .article .date {
+  color: #000;
   font-style: italic;
   padding-bottom: 10px;
 }
@@ -206,7 +209,7 @@ h4.section-heading {
   font-weight: bold;
 }
 .workshop .title a {
-  color: #333 !important;
+  color: #000000 !important;
 }
 .workshop p {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -219,6 +222,7 @@ h4.section-heading {
 }
 .workshop .caption,
 .workshop .date {
+  color: #000;
   font-style: italic;
   padding-bottom: 10px;
 }
@@ -236,7 +240,7 @@ h4.section-heading {
   font-weight: bold;
 }
 .event .title a {
-  color: #333 !important;
+  color: #000000 !important;
 }
 .event .address {
   word-break: break-all;
@@ -252,7 +256,7 @@ h4.section-heading {
   color: #f4f4f4;
 }
 .placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
@@ -262,42 +266,37 @@ h4.section-heading {
 .form-control {
   border: none;
   box-shadow: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #000000;
   border-radius: 0px;
 }
-.form-control .placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
 .form-control::-webkit-input-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .form-control::-ms-input-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .form-control::-moz-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .form-control:focus {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #000000;
   outline: invert none medium !important;
   box-shadow: none !important;
 }
 textarea.form-control {
-  border: 2px solid #333;
+  border: 2px solid #000000;
   max-width: 100%;
   height: 100px;
   padding: 15px;
 }
 textarea.form-control:focus {
-  border: 1px solid #333;
+  border: 1px solid #000000;
 }
 label {
   font-weight: bold;
@@ -343,64 +342,54 @@ label {
   width: 100%;
   border: none;
   box-shadow: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #000000;
   border-radius: 0px;
 }
-.fscf-input-text .placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
 .fscf-input-text::-webkit-input-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .fscf-input-text::-ms-input-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .fscf-input-text::-moz-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .fscf-input-text:focus {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #000000;
   outline: invert none medium !important;
   box-shadow: none !important;
 }
 .fscf-input-textarea {
-  border: 2px solid #333;
+  border: 2px solid #000000;
   max-width: 100%;
   min-width: 100%;
   height: 100px;
   padding: 15px;
 }
-.fscf-input-textarea .placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
 .fscf-input-textarea::-webkit-input-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .fscf-input-textarea::-ms-input-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .fscf-input-textarea::-moz-placeholder {
-  color: #333;
+  color: #515151;
   font-style: italic;
   letter-spacing: 1px;
 }
 .fscf-input-textarea:focus {
   outline: none;
-  border: 1px solid #333;
+  border: 1px solid #000000;
 }
 .fscf-button-submit {
   font-family: 'Cardo', serif;
@@ -424,6 +413,10 @@ label {
 }
 body.black .fscf-input-text {
   background: transparent;
+  border-bottom-color: #fff;
+}
+body.black .flat-input:focus,
+body.black .fscf-input-text:focus {
   border-bottom-color: #fff;
 }
 body.black .fscf-input-textarea {
