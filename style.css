@@ -100,6 +100,15 @@ h4.section-heading {
   outline: invert none medium !important;
   box-shadow: none !important;
 }
+textarea.flat-input {
+  border: 2px solid #333;
+  max-width: 100%;
+  height: 100px;
+  padding: 15px;
+}
+textarea.flat-input:focus {
+  border: 1px solid #333;
+}
 label {
   font-weight: bold;
   text-transform: uppercase;
@@ -193,6 +202,11 @@ label {
 #search i {
   color: #333;
 }
+.article.session {
+  border-top: 2px solid #333;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
 .article .title {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -213,6 +227,9 @@ label {
 .article .date {
   font-style: italic;
   padding-bottom: 10px;
+}
+.article .attend {
+  text-align: right;
 }
 .workshop {
   padding-bottom: 30px;
@@ -240,6 +257,9 @@ label {
 .workshop .date {
   font-style: italic;
   padding-bottom: 10px;
+}
+.workshop .attend {
+  text-align: right;
 }
 .workshop .stretch-image {
   height: 175px;
