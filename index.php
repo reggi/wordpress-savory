@@ -26,22 +26,7 @@
   </div>
 </div>
 
-<div class="container-full padding" id="search">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <form class="form-inline pull-right">
-          <div class="form-group">
-            <label class="sr-only" for="search">Search</label>
-            <input type="text" class="form-control flat-input" id="search" placeholder="search">
-          </div>
-          <button type="submit" class="btn btn-lg btn-link"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
+<?php include "searchform.php"; ?>
 
 <div class="container-full padding-top-30px" id="main">
   <div class="container">

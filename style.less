@@ -103,47 +103,6 @@ h4.section-heading{
   line-height:2;
 }
 
-// FORM STYLES
-
-
-.form-group{
-  margin-bottom: 30px;
-}
-
-.form-control{
-  border:none;
-  box-shadow:none;
-  border-bottom:2px solid #333;
-  border-radius:0px;
-  .placeholder{
-    color:#333;font-style:italic;letter-spacing:1px
-  }
-  &::-webkit-input-placeholder {.placeholder;}
-  &::-ms-input-placeholder {.placeholder;}
-  &::-moz-placeholder {.placeholder;}
-  &:focus{
-    border-bottom:1px solid #333;
-    outline:invert none medium !important;
-    box-shadow:none !important;
-  }
-}
-
-textarea.form-control{
-  border:2px solid #333;
-  max-width: 100%;
-  height: 100px;
-  padding: 15px;
-  &:focus{
-    border:1px solid #333;
-  }
-}
-
-label{
-  font-weight:bold;
-  text-transform:uppercase;
-  display:block;
-}
-
 // BUTTONS
 
 .btn-custom{
@@ -347,6 +306,34 @@ label{
 }
 
 
+.flat-input-inverse{
+  border-bottom:2px solid #fff;
+  color:#fff;
+}
+
+.flat-input-inverse:hover{
+  border-bottom:1px solid #fff;
+  color:#fff;
+}
+
+#search-bar{
+  margin-top:50px;
+  .flat-input-inverse{
+    width:100%;
+    background-color: #000;
+  }
+  .form-group{
+    width:100%
+  }
+}
+
+#search-bar{
+  background-color:#000;
+}
+#search-results{
+  background-color:#000;
+}
+
 /* Alignment DIVs */
 .fscf-div-form              {}
 .fscf-div-left-box          {}
@@ -461,4 +448,19 @@ label{
 .addthis_sharing_toolbox{
   display: inline-block;
   vertical-align: middle;
+}
+
+
+body.search{
+  background-color:#000;
+  color:@color-white;
+}
+
+a.white-link,
+.white-link a{
+  color:#fff !important;
+}
+
+.white-title{
+  .font-title;
 }

@@ -17,4 +17,12 @@ function string_limit_words($string, $word_limit){
   return implode(' ', $words);
 }
 
+function filter_search($query) {
+    if ($query->is_search) {
+	     $query->set('post_type', array('post', 'event'));
+    };
+    return $query;
+};
+add_filter('pre_get_posts', 'filter_search');
+
 ?>

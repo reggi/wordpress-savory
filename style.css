@@ -75,54 +75,6 @@ h4.section-heading {
   margin-bottom: 30px;
   line-height: 2;
 }
-.form-group {
-  margin-bottom: 30px;
-}
-.form-control {
-  border: none;
-  box-shadow: none;
-  border-bottom: 2px solid #333;
-  border-radius: 0px;
-}
-.form-control .placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-.form-control::-webkit-input-placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-.form-control::-ms-input-placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-.form-control::-moz-placeholder {
-  color: #333;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-.form-control:focus {
-  border-bottom: 1px solid #333;
-  outline: invert none medium !important;
-  box-shadow: none !important;
-}
-textarea.form-control {
-  border: 2px solid #333;
-  max-width: 100%;
-  height: 100px;
-  padding: 15px;
-}
-textarea.form-control:focus {
-  border: 1px solid #333;
-}
-label {
-  font-weight: bold;
-  text-transform: uppercase;
-  display: block;
-}
 .btn-custom {
   font-family: 'Cardo', serif;
   text-rendering: optimizeLegibility;
@@ -349,6 +301,30 @@ label {
   text-transform: uppercase;
   display: block;
 }
+.flat-input-inverse {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+.flat-input-inverse:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+#search-bar {
+  margin-top: 50px;
+}
+#search-bar .flat-input-inverse {
+  width: 100%;
+  background-color: #000;
+}
+#search-bar .form-group {
+  width: 100%;
+}
+#search-bar {
+  background-color: #000;
+}
+#search-results {
+  background-color: #000;
+}
 /* Alignment DIVs */
 .fscf-div-field-left {
   padding-bottom: 30px;
@@ -467,4 +443,16 @@ label {
 .addthis_sharing_toolbox {
   display: inline-block;
   vertical-align: middle;
+}
+body.search {
+  background-color: #000;
+  color: #f4f4f4;
+}
+a.white-link,
+.white-link a {
+  color: #fff !important;
+}
+.white-title {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }

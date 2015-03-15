@@ -1,9 +1,6 @@
 
 <h4 class="section-heading">What's Now? &mdash; Subscribe here</h4>
 
-
-
-
 <div id="mc_embed_signup">
 <form action="//ediblespirit.us10.list-manage.com/subscribe/post?u=50a3ccb1ba285ec877f55f452&amp;id=bb2155c8ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -98,7 +95,7 @@
         <div class="btn-share">
         Share Event + <div class="addthis_sharing_toolbox" data-url="<?php the_permalink(); ?>" data-title="<?php the_title_attribute(); ?>"></div>
         </div>
-        
+
         <a href="<?php echo get_post_meta($post->ID, 'event_url', true); ?>" class="btn btn-custom btn-full">RSVP</a>
       </div>
       <?php endwhile; ?>
