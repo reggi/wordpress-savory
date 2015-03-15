@@ -41,6 +41,9 @@ body {
 .bind-image {
   width: 100%;
 }
+.bind-images img {
+  width: 100%;
+}
 .stretch-image {
   background-repeat: no-repeat;
   background-position: center center;
@@ -419,6 +422,21 @@ label {
 .fscf-button-submit:hover {
   background-color: #181818;
 }
+body.black .fscf-input-text {
+  background: transparent;
+  border-bottom-color: #fff;
+}
+body.black .fscf-input-textarea {
+  background: transparent;
+  border-color: #fff;
+}
+body.black .fscf-button-submit {
+  background-color: #fff;
+  color: #000000 !important;
+}
+body.black .fscf-button-submit:hover {
+  background-color: #f4f4f4;
+}
 /* social */
 .at-share-btn {
   max-height: 33px !important;
@@ -445,7 +463,7 @@ label {
   display: inline-block;
   vertical-align: middle;
 }
-body.search {
+body.black {
   background-color: #000;
   color: #f4f4f4;
 }

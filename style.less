@@ -61,6 +61,10 @@ body{
   width:100%
 }
 
+.bind-images img{
+  width:100%
+}
+
 .stretch-image{
   background-repeat:no-repeat;
   background-position:center center;
@@ -417,6 +421,23 @@ label{
 .fscf-powered-by         {}
 
 
+body.black{
+  .fscf-input-text {
+    background: transparent;
+    border-bottom-color: #fff;
+  }
+  .fscf-input-textarea{
+    background: transparent;
+    border-color: #fff;
+  }
+  .fscf-button-submit{
+    background-color:#fff;
+    color:#000 !important
+  }
+  .fscf-button-submit:hover{
+    background-color:@color-white;
+  }
+}
 
 /* social */
 
@@ -452,7 +473,7 @@ label{
 }
 
 
-body.search{
+body.black{
   background-color:#000;
   color:@color-white;
 }

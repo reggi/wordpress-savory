@@ -32,8 +32,8 @@
     })
   </script>
 </head>
-<?php if(is_search()){ ?>
-<body class="search">
+<?php if(is_search() || is_page(12)){ ?>
+<body class="black">
 <?php }else{ ?>
 <body>
 <?php } ?>
