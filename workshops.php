@@ -99,7 +99,13 @@
         <?php wp_reset_query(); ?>
       </div>
       <div class="col-xs-12 col-sm-4">
+
+
         <h4 class="section-heading">Have an idea?</h4>
+
+        <?php echo do_shortcode( "[si-contact-form form='1']" ); ?>
+
+        <!--
         <form class="subscription">
           <div class="form-group">
             <label class="flat-label" for="your-name">Your Name</label>
@@ -117,6 +123,7 @@
             <button type="submit" class="btn btn-custom btn-full">Submit</button>
           </div>
         </form>
+        -->
       </div>
     </div>
   </div>

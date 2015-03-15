@@ -5,11 +5,15 @@
   <div class="main-header-text container padding-top-30px">
     <div class="row">
       <div class="col-xs-2 col-md-1">
-        <img class="bind-image" src="<?php echo get_template_directory_uri(); ?>/images/lotus-white.png">
+        <a href="/">
+          <img class="bind-image" src="<?php echo get_template_directory_uri(); ?>/images/lotus-white.png">
+        </a>
       </div>
       <div class="col-xs-10 col-md-11">
         <span class="logo">
-          Edible Spirits
+          <a href="/">
+            Edible Spirits
+          </a>
         </span>
         <hr class="white-rule">
         <?php wp_nav_menu( array('menu' => 'Header Menu' )) ?>

@@ -7,7 +7,7 @@
       <div class="col-xs-2 col-md-1">
         <a href="/">
           <img class="bind-image" src="<?php echo get_template_directory_uri(); ?>/images/lotus-white.png">
-        <a/>
+        </a>
       </div>
       <div class="col-xs-10 col-md-11">
         <span class="logo">
