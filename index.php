@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="header">
-  <div class="main-image" style="background-image:url(<?php echo get_template_directory_uri(); ?>/homepage.jpg)"></div>
+  <div class="main-image" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/homepage.jpg)"></div>
   <div class="main-header-text container padding-top-30px">
     <div class="row">
       <div class="col-xs-2 col-md-1">
