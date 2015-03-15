@@ -1,12 +1,12 @@
-<div class="row workshop">
-  <div class="col-xs-12">
+<div class="row workshop onClickShowContent">
+  <div class="col-xs-12 col-title">
     <div class="row">
       <div class="col-xs-12">
         <h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
       </div>
     </div>
-    <div class="row onClickShowContent">
-      <div class="col-xs-12 col-sm-6">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-image">
         <?php
           $post_thumbnail_id = get_post_thumbnail_id();
           $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );
@@ -17,7 +17,7 @@
           <?php the_excerpt(); ?>
         </p>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 col-content">
         <div class="content">
           <?php the_content(); ?>
         </div>
