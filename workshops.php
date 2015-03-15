@@ -36,6 +36,27 @@
         <?php wp_reset_query(); ?>
       </div>
     </div>
+
+    <div class="row" id="workshops">
+      <div class="col-xs-12">
+        <h4 class="section-heading">Workshops</h4>
+      </div>
+    </div>
+    <div class="row" id="workshops">
+      <div class="col-xs-12">
+        <?php
+        $custom_query = new WP_Query(array (
+            "post_type" => "event",
+            "category__in" => get_cat_id("Workshops"),
+        ));
+        if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+          <?php include "article-workshop.php"; ?>
+        <?php endwhile; else : ?>
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
+      </div>
+    </div>
+
     <div class="row" id="journey-workshops">
       <div class="col-xs-12">
         <h4 class="section-heading">Journey Workshops</h4>
@@ -69,6 +90,7 @@
         <div class="article">
           <h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
           <div class="content">
+            <p><?php the_excerpt(); ?></p>
             <?php the_content(); ?>
           </div>
         </div>

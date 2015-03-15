@@ -21,7 +21,7 @@
   <?php
   $custom_query = new WP_Query(array (
       "post_type" => "post",
-      "posts_per_page" => 1,
+      "posts_per_page" => 3,
       "post__not_in" => array($main_post_id)
   ));
   if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
@@ -31,7 +31,10 @@
         <h4 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
         <div class="date"><?php the_time('F jS, Y'); ?></div>
         <p class="excerpt">
-          <?php the_excerpt() ?>
+          <?php
+            $excerpt = get_the_excerpt();
+            echo string_limit_words($excerpt,20);
+          ?>...
         </p>
         <p style="text-align:right">
           <a href="<?php the_permalink(); ?>" class="btn btn-custom" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Read More</a>
