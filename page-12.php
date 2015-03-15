@@ -6,7 +6,7 @@
       <div class="col-xs-2 col-md-1">
         <a href="/">
           <img class="bind-image" src="<?php echo get_template_directory_uri(); ?>/images/lotus-white.png">
-        <a/>
+        </a>
       </div>
       <div class="col-xs-10 col-md-11">
         <span class="logo">
@@ -36,7 +36,7 @@
     <div class="col-xs-12 col-sm-6 bind-images padding-top-30px">
 
       <?php
-      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) );
 
       if ($image) : ?>
           <img src="<?php echo $image[0]; ?>" class="padding-top-30px bind-image" />
