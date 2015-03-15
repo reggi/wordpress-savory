@@ -94,7 +94,11 @@
       <div class="event small">
         <h4 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
         <div class="address"><?php echo get_post_meta($post->ID, 'address', true); ?></div>
-        <div class="addthis_native_toolbox"></div>
+
+        <div class="btn-share">
+        Share Event + <div class="addthis_sharing_toolbox" data-url="<?php the_permalink(); ?>" data-title="<?php the_title_attribute(); ?>"></div>
+        </div>
+        
         <a href="<?php echo get_post_meta($post->ID, 'event_url', true); ?>" class="btn btn-custom btn-full">RSVP</a>
       </div>
       <?php endwhile; ?>
