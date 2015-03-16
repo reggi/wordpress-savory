@@ -106,7 +106,7 @@ h4.section-heading {
 }
 .btn-share {
   width: 100%;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -169,7 +169,7 @@ h4.section-heading {
   color: #000000;
 }
 .article.session {
-  border-top: 2px solid #000000;
+  border-top: 1px solid #000000;
   padding-top: 15px;
   margin-bottom: 30px;
 }
@@ -266,7 +266,7 @@ h4.section-heading {
 .form-control {
   border: none;
   box-shadow: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   border-radius: 0px;
 }
 .form-control::-webkit-input-placeholder {
@@ -290,7 +290,7 @@ h4.section-heading {
   box-shadow: none !important;
 }
 textarea.form-control {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   max-width: 100%;
   height: 100px;
   padding: 15px;
@@ -304,7 +304,7 @@ label {
   display: block;
 }
 .flat-input-inverse {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   color: #fff;
 }
 .flat-input-inverse:hover {
@@ -342,7 +342,7 @@ label {
   width: 100%;
   border: none;
   box-shadow: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   border-radius: 0px;
 }
 .fscf-input-text::-webkit-input-placeholder {
@@ -366,7 +366,7 @@ label {
   box-shadow: none !important;
 }
 .fscf-input-textarea {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   max-width: 100%;
   min-width: 100%;
   height: 100px;
