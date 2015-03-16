@@ -201,6 +201,7 @@ h4.section-heading {
 }
 .article .attend {
   text-align: right;
+  padding-top: 40px;
 }
 .workshop {
   padding-bottom: 30px;
@@ -234,6 +235,7 @@ h4.section-heading {
 }
 .workshop .attend {
   text-align: right;
+  padding-top: 40px;
 }
 .workshop .stretch-image {
   height: 175px;
