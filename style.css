@@ -14,7 +14,7 @@ License:Private Copyright
 }
 .font-paragraph {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  line-height: 2;
+  line-height: 1.8;
 }
 .font-title {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -186,7 +186,7 @@ h4.section-heading {
 }
 .article p {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  line-height: 2;
+  line-height: 1.8;
 }
 .article img {
   width: 100%;
@@ -219,7 +219,7 @@ h4.section-heading {
 }
 .workshop p {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  line-height: 2;
+  line-height: 1.8;
 }
 .workshop img {
   width: 100%;
