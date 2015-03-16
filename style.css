@@ -173,7 +173,7 @@ h4.section-heading {
 .article.session {
   border-top: 1px solid #000000;
   padding-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .article .title {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -483,4 +483,7 @@ a.white-link,
 }
 .form-control {
   padding-left: 0;
+}
+.private-sessions {
+  margin-bottom: 20px;
 }

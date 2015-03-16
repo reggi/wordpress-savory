@@ -5,7 +5,7 @@
         <h4 class="section-heading">Private Sessions</h4>
       </div>
     </div>
-    <div class="row masonry">
+    <div class="row masonry private-sessions">
       <?php
       $custom_query = new WP_Query(array (
           "post_type" => "event",
